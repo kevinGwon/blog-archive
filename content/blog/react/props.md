@@ -1,5 +1,5 @@
 ---
-title: props
+title: React - props
 date: 2019-11-29 14:11:80
 category: react
 ---

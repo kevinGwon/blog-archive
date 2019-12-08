@@ -1,5 +1,5 @@
 ---
-title: mvvm pattern
+title: Vue - mvvm pattern
 date: 2019-11-25 17:11:06
 category: vue
 ---
