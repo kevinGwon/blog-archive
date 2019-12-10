@@ -183,7 +183,7 @@ export default {
 - actions의 함수가 호출이되어 mutations의 함수를 트리거한다. 이러한 형태는 다음의 이미지구조와 같다.
 
 DOM event -> actions -> mutations -> state변경
-
+![vuex lifecycle](../../assets/images/vue/img-lifecycle.png)
 ```
 let store = new Vuex.Store({
     state: {
