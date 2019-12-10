@@ -33,16 +33,17 @@ Object.defineProperty 함수의 get, set 메소드가 활용된다.
 let obj = {},
     text = '';
 let h = document.createElement('h1');
+
 document.body.appendChild(h);
 Object.defineProperty(obj, 'test', {
-   get: function() {
-       return text;
-   },
-   set: function(val) {
-       text = val;
-//target
-       h.innerHTML = text;
-   }
+    get: function() {
+        return text;
+    },
+    set: function(val) {
+        text = val;
+        //target
+        h.innerHTML = text;
+    }
 });
 obj.test = "kevin"
 ```
