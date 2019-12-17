@@ -69,25 +69,47 @@ Javscript에서 Hoisting이란 선언된 변수(or 함수)를 정의하면 스�
 
 ###let/const
 ```js
+(function() {
+  console.log(getVariable); // Cannot access 'getVariable' before initialization
+  let getVariable = 'kevin';
+})();
 ````
+위와같이 오류가 뜨기 때문에 let,const는 호이스팅이 되지 않는다 라고 생각할 수 있습니다. 그러나 이와 같은 현상은 TDZ(Temporal Dead Zone)이 존재하기 때문입니다. 다음과 같이 코드를 살펴봅시다.
+
+```js
+const getVariable = 'kevin out';
+(function() {
+  console.log(getVariable); //Cannot access 'getVariable' before initialization
+  const getVariable = 'kevin inner';
+}());
+```
+
+다음과 같이 오류가 일어난 이유는 let,const역시 호이스팅이 되고있기 때문입니다. 이는 코드를 예측가능하고 잠재적으로 버그를 쉽게 찾아낼 수 있도록 도와줍니다.
+
+변수는 다음과 같이 3단계에 걸쳐 생성된다.
+1. 선언 단계 - 변수를 실행 컨텍스트의 변수 객체에 등록한다. 이 변수 객체는 스코프가 참조하는 대상이 된다.
+2. 초기화 단계 - 변수 객체에 등록된 변수를 위한 공간을 메모리에 확보한다. 이 단계에서 변수는 undefined로 초기화된다.
+3. 할당 단계 - undefined로 초기화된 변수에 실제 값을 할당한다.
+
+var 키워드로 선언된 변수는 선언단계와 초기화 단계가 한번에 이루어진다. 변수를 위한 공간을 메모리에 확보하고 undefined로 초기화 되어 호이스팅이 된다.
+
+let 키워드로 선언된 변수는 선언 단계와 초기화 단계까 분리되어 진행됩니다. 스코프에 변수 객체를 등록하지만 초기화 단계는 선언문에 도달 했을 때 이루어집니다. 따라서 초기화 단계가 이루어진 상태가 아니기 때문에 접근하면 참조 에러를 발생하는 것입니다. 스코프의 시작점부터 초기화 시작점까지 변수를 참조할 수 없는데 이를 TDZ(Temporal Dead Zone, 일시적 사각지대)라 합니다.
+
+&nbsp;  
+
+참조) [poiemaweb.com](https://poiemaweb.com/es6-block-scope)
 
 ##let, const를 지향해야 하는 이유
+
 var변수는 다음과 같은 특징을 가집니다.
 - 헷갈리는 함수 레벨 스코프
 - 중복 선언 가능
 - 생략 가능
 - 호이스팅
 
-```js
-(function() {
-  function runTest() {
+let, const는 다음과 같은 특징을 가집니다.
+- 명확한 블럭 레벨 스코프
+- 중복 선언 불가능
+- strict 호이스팅
 
-    getVariable = 'kevin';
-  }
-  runTest();
-  console.log(getVariable); 
-})();
-```
-
-https://medium.com/sjk5766/var-let-const-%ED%8A%B9%EC%A7%95-%EB%B0%8F-scope-335a078cec04
-https://medium.com/korbit-engineering/let%EA%B3%BC-const%EB%8A%94-%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85-%EB%90%A0%EA%B9%8C-72fcf2fac365
+개인이 혼자 var의 개념을 이해하고 개발을 한다면 문제가 되지 않겠지만 누군가 그 코드를 이어받아 유지보수에 들어간다면 예상치 못한 곳에서 에러를 맞이할 수 있습니다. 따라서 let, const를 이용하여 코드및 버그를 예측 가능한 형태로 개발 하는것을 지향하고 추천합니다. 
