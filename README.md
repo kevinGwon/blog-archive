@@ -1,3 +1,3 @@
 ## url
 
-https://kevingwon.netlify.com/
+https://developergwon-blog.netlify.com/
