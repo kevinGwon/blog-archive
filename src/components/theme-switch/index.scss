@@ -1,6 +1,6 @@
 .switch-container {
   position: absolute;
-  right: 0;
+  right: 4rem;
   top: 50%;
   text-align: right;
   transform: translateY(-50%);
@@ -10,5 +10,9 @@
     color: #222;
     font-size: 14px;
     font-weight: 900;
+  }
+
+  @media (min-width: 1024px) {
+    right: 0;
   }
 }
