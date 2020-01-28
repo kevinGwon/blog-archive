@@ -2,11 +2,11 @@ module.exports = {
   title: `kevinGwon Blog`,
   description: `Blog posted about ...`,
   author: `kevinGwon`,
-  introduction: `기술 이슈 사항을 기록하는 공간입니다.`,
+  introduction: `기술 공부한 내용을 기록하는 공간입니다.`,
   siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: ``, // Your GitHub account
+    github: `kevinGwon`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
   },
