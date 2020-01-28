@@ -65,7 +65,8 @@ export const Profile = () => {
             <div class="career-box">
               <strong>사용된 기술</strong>
               <p>
-                React, Hook, Redux, Redux-thunk, Router, Axios, Webpack(v4.x.x)
+                React, Hook, Redux, Redux-thunk, Router, Axios, Sass,
+                Webpack(v4.x.x)
               </p>
             </div>
           </li>
