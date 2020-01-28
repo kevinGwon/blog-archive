@@ -1,0 +1,18 @@
+.skill-list {
+  margin-left: -1rem;
+  margin-top: -1rem;
+
+  li {
+    display: inline-block;
+    max-width: 60px;
+    vertical-align: middle;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  small {
+    display: inline-block;
+    line-height: 1;
+  }
+}
