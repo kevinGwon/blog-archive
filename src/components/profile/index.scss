@@ -36,21 +36,34 @@
         }
       }
     }
-    .career-list {
-      margin: 0;
+    .career {
+      &-list {
+        margin: 0;
 
-      li {
-        display: block;
+        li {
+          display: block;
 
-        &::before {
-          content: '-';
-          display: inline-block;
-          margin-right: 0.5rem;
-          vertical-align: middle;
+          &::before {
+            content: '-';
+            display: inline-block;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+          }
+
+          a {
+            margin-left: 0.5rem;
+          }
         }
+      }
+      &-box {
+        margin-top: 1rem;
+        padding-left: 1rem;
+        border-left: 2px solid #000;
+        line-height: 1;
 
-        a {
-          margin-left: 0.5rem;
+        strong {
+          display: block;
+          margin-bottom: 1rem;
         }
       }
     }
