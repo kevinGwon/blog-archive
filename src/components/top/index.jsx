@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { GitHubIcon } from '../social-share/github-icon'
 import { Layout } from '../../layout'
+import { ThemeSwitch } from '../theme-switch'
 
 import './index.scss'
 
@@ -11,6 +12,7 @@ export const Top = ({ title, location, rootPath }) => {
     <div className="top">
       <nav className="top-nav">
         <h1 className="a11y">KevinGwon Navigator</h1>
+        <ThemeSwitch />
         <ul>
           <li>
             <Link to={`/`} className="link">

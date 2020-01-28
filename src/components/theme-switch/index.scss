@@ -1,5 +1,9 @@
 .switch-container {
+  position: absolute;
+  right: 0;
+  top: 50%;
   text-align: right;
+  transform: translateY(-50%);
 
   .icon {
     text-align: center;
