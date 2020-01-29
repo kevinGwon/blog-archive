@@ -13,6 +13,7 @@ export const Profile = () => {
     'gsap.png',
     'scrollmagic.png',
     'styled-components.png',
+    'modernizr.png',
   ]
   const task = ['nodejs.png', 'webpack.png', 'gulp.png', 'netlify.png']
 
