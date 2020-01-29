@@ -1,51 +1,3 @@
-<div align="center">
-
-![](./assets/gatsby-starter-bee.png)
-
-</div>
-
-# gatsby-starter-bee
-
-![](./assets/screenshot-pc.png)
-
-[![Build Status](https://travis-ci.org/JaeYeopHan/gatsby-starter-bee.svg?branch=master)](https://travis-ci.org/JaeYeopHan/gatsby-starter-bee) [![Greenkeeper badge](https://badges.greenkeeper.io/JaeYeopHan/gatsby-starter-bee.svg)](https://greenkeeper.io/)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/JaeYeopHan/gatsby-starter-bee.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/JaeYeopHan/gatsby-starter-bee/alerts/)
-[![Lighthouse score: 100/100](https://lighthouse-badge.appspot.com/?score=100)](https://github.com/ebidel/lighthouse-badge)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4b1962ce-6206-4d8f-9516-63be92294198/deploy-status)](https://app.netlify.com/sites/gatsby-starter-bee/deploys)
-
-<a href="https://twitter.com/JbeeLjyhanll">
-<img alt="Twitter: JbeeLjyhanll" src="https://img.shields.io/twitter/follow/JbeeLjyhanll.svg?style=social" target="_blank" />
-</a>
-
-> Blog Starter Pack based on [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog)
-
-In this template...
-
-- 💄 Fira Code 폰트로 코드 하이라이팅 기능
-- 😄 Emoji 지원
-- 🗣 Twitter, Facebook 등 SNS 공유 지원
-- 💬 Disqus, utterances 댓글 기능 지원
-- ☕ 'Buy me a coffee' 라는 후원 기능
-- 🧙 포스트 작성을 위한 CLI 도구 지원
-- 🤖 GA 지원
-- ⭐ 여러 UX요소 추가
-- ⚙ 별도 설정 파일을 통한 블로그 세부 사항 설정 지원
-
-> [Gatsby Starters Docs](https://www.gatsbyjs.org/starters/JaeYeopHan/gatsby-starter-bee/)
-
-## Demo
-
-- [Default Theme](https://gatsby-starter-bee.netlify.com/)
-
-## Use case
-
-- [JBEE.io](https://jbee.io)
-- [rinae's devlog](https://rinae.dev/)
-- [Zero's blog](https://awesomezero.com/)
-
-> If you're using this template, Please Pull Request for `Use case`!
-
 ## 😎 Quick Start
 
 ### 1. Gatsby 프로젝트를 시작합니다.
@@ -133,40 +85,6 @@ src
     ├── blog-post.js
     └── home.js
 ```
-
-### 🎨 스타일
-
-`src/styles` 디렉토리에서 CSS 속성들을 수정할 수 있습니다.
-
-```
-src/styles
-├── code.scss
-├── dark-theme.scss
-├── light-theme.scss
-└── variables.scss
-```
-
-### 🍭 꿀팁
-
-- 프로필 사진! (replace file in `/content/assets/profile.png`)
-- 파비콘 이미지! (replace file in `/content/assets/felog.png`)
-- 헤더의 그라데이션! (\$theme-gradient `/styles/variables.scss`)
-
-## ☕ 마음에 드셨나요?
-
-<a href="https://www.buymeacoffee.com/jbee" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
-
-## 🤔 If...
-
-만약 현재 미디엄에서 블로그를 운영중이시라면 마이그레이션을 고려해보세요! [medium-to-own-blog](https://github.com/mathieudutour/medium-to-own-blog)!
-
-## :bug: 버그제보
-
-[Issue](https://github.com/JaeYeopHan/gatsby-starter-bee/issues)
-
-## 🎁 기여하기
-
-[Contributing guide](./CONTRIBUTING.md)
 
 ## LICENSE
 
