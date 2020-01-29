@@ -53,7 +53,7 @@ export const Profile = () => {
         <h3>포트폴리오</h3>
         <ul className="career-list">
           <li>
-            themoviedb (2020)
+            Themoviedb (2020)
             <a
               href="https://developergwon-react.netlify.com/"
               target="_blank"
@@ -77,6 +77,14 @@ export const Profile = () => {
                 </li>
                 <li>렌더링 최적화를 테스트 하였습니다.</li>
               </ul>
+              <strong>Github</strong>
+              <a
+                href="https://github.com/kevinGwon/react-portfolio"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                https://github.com/kevinGwon/react-portfolio
+              </a>
             </div>
           </li>
         </ul>
