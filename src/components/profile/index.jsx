@@ -62,12 +62,21 @@ export const Profile = () => {
             >
               [링크]
             </a>
-            <div class="career-box">
+            <div className="career-box">
               <strong>사용된 기술</strong>
               <p>
                 React, Hook, Redux, Redux-thunk, Router, Axios, Sass,
                 Webpack(v4.x.x)
               </p>
+              <strong>소개</strong>
+              <ul>
+                <li>CRA를 사용하지 않고 Wepback으로 셋팅을 하였습니다.</li>
+                <li>
+                  API를 이용하여 검색기능, Router를 이용하여 상세페이지를
+                  만들었습니다.
+                </li>
+                <li>렌더링 최적화를 테스트 하였습니다.</li>
+              </ul>
             </div>
           </li>
         </ul>
