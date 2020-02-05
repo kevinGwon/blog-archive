@@ -8,6 +8,7 @@ export const Profile = () => {
   const frameworks = ['nextjs.png', 'react.png', 'vue.png']
   const library = [
     'redux.png',
+    'vuex.png',
     'jquery.png',
     'gsap.png',
     'scrollmagic.png',
