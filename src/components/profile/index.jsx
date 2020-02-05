@@ -5,9 +5,8 @@ import './index.scss'
 export const Profile = () => {
   const htmlCss = ['html5.png', 'css3.png', 'sass.png', 'a11y.jfif']
   const javascript = ['javascript.jfif', 'typescript.png', 'es6.jfif']
+  const frameworks = ['nextjs.png', 'react.png', 'vue.png']
   const library = [
-    'react.png',
-    'vue.png',
     'redux.png',
     'jquery.png',
     'gsap.png',
@@ -40,6 +39,10 @@ export const Profile = () => {
           <span className="mark">Javascript</span>
         </h3>
         <Skill list={javascript} />
+        <h3>
+          <span className="mark">Frameworks</span>
+        </h3>
+        <Skill list={frameworks} />
         <h3>
           <span className="mark">Library</span>
         </h3>
